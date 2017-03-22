@@ -1,0 +1,1323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0968D581CE2E44DCB0377177 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6303552A6EE54FF38C8DD6DD /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				EAB02A3FA1674F7599F2A058 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				4446DA220FFA4B4FA12104DC /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		4FC599E87E954B82B41CCFCB /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C6C8D550178147DF8FBC94EF /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				65C6C8E8C59044AA87712ED0 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		5B54CF52FD64431486DE4871 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9182796881B4714AFDF4CC5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				BDBA6709A1D2440BBBE7B0C5 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		CA23A55E33C44B769B7C7B26 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1E39FA566A2A4829943B72F6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				84AC1FBD777142F9A653854A /* CMake Rules */,
+			);
+			dependencies = (
+				7408B17E3072428991D81A35 /* PBXTargetDependency */,
+				DA4B701D4FB9438F8B5C9BCA /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		05FF93B979854CA7AE628F14 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.h */ = {isa = PBXBuildFile; fileRef = 8604F18AFF084DA2A7F0B43C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		06BC1EC8CB8645E38EB7992B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.h */ = {isa = PBXBuildFile; fileRef = EE84346CE27747FE91F2F74E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		079D267A5A65462FB340DF7F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.h */ = {isa = PBXBuildFile; fileRef = B8A30DB9DDA249F2A3E70DAC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.h */; settings = {COMPILER_FLAGS = ""; }; };
+		14FD9E07F1D24BDCAABFE47A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.cpp */ = {isa = PBXBuildFile; fileRef = 8609043EC9974EAC9EADD1A5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		17C66071740841AF9B5A811A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.h */ = {isa = PBXBuildFile; fileRef = 56A4457EA72D4A58868654B1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		193A2B79820748EAADF26CCB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.h */ = {isa = PBXBuildFile; fileRef = 67232266603B4C35A6CEAD05 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.h */; settings = {COMPILER_FLAGS = ""; }; };
+		19B290981DDF4E9A88AE67C1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.cpp */ = {isa = PBXBuildFile; fileRef = 09CEE8ABAB9E468DBC2A9033 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1B48F5A60A1248A4B16B17C9 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.cpp */ = {isa = PBXBuildFile; fileRef = F2A077CF97FD4CDCB2C3553B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1C3F0709026144D38F85AFD6 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.h */ = {isa = PBXBuildFile; fileRef = F32D976F03EA4E7DB015190D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		1D302206E55C445F8D3CD825 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.cpp */ = {isa = PBXBuildFile; fileRef = 573D965DA15E45919BC06069 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1DB2441E348C4DF9A04CFE76 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.cpp */ = {isa = PBXBuildFile; fileRef = 366E94A3DAD5417FBF7AAB9C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2589CBF52FFA4503A4F1792C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.h */ = {isa = PBXBuildFile; fileRef = B2809F9487504F1889F6C932 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		2992BAAD408641EDBA7D1F8C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.h */ = {isa = PBXBuildFile; fileRef = B553A115AEA4401984354FD9 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.h */; settings = {COMPILER_FLAGS = ""; }; };
+		2B2809B165B8402A8FD00F26 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.h */ = {isa = PBXBuildFile; fileRef = C0C4649C73EE4DBDB5D0E674 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		2BF66CB6F8524C38B5A51144 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.h */ = {isa = PBXBuildFile; fileRef = A3C4F0B9867D452CAA42FB2C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.h */; settings = {COMPILER_FLAGS = ""; }; };
+		2FC5AC02B8AC41E28317CB27 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.h */ = {isa = PBXBuildFile; fileRef = ADE91A6230B342278B7184A0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.h */; settings = {COMPILER_FLAGS = ""; }; };
+		314FBAE3C96E48B4BD9D713B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideEdge.cpp */ = {isa = PBXBuildFile; fileRef = 6AAE7540B2AE4527AC6F0A73 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideEdge.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		344ACCC9094E4990B71609F4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.cpp */ = {isa = PBXBuildFile; fileRef = 6AFACDF6BB4E4ABAB3AAC485 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3A044F5C81F04CCA9DAE8234 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.h */ = {isa = PBXBuildFile; fileRef = 2A9336AA66874555B9A3E11F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3A45DC9160784589A872B1E3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.h */ = {isa = PBXBuildFile; fileRef = E8FBB277E8454F57A14C8D1C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3C91945093D448B98C17B48F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2Shape.h */ = {isa = PBXBuildFile; fileRef = 786D2A1925F748EE9BFB248C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2Shape.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3FB876CB9D3A465CA41C839C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.cpp */ = {isa = PBXBuildFile; fileRef = 32992B2719E14D839619DCE1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4021837D5C774FCEA6F8DECC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.h */ = {isa = PBXBuildFile; fileRef = 0D453CEE88CE47E4B020CC4A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.h */; settings = {COMPILER_FLAGS = ""; }; };
+		42D88ABB962C454F8A9CDBFC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.h */ = {isa = PBXBuildFile; fileRef = A80C2775BC4440EAA4A146EF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.h */; settings = {COMPILER_FLAGS = ""; }; };
+		43DED3F5CD8D4E188C08ECCA /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h */ = {isa = PBXBuildFile; fileRef = 4D10C4A64EB04DB4BE442FE7 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		4475BDF9EA3E446394BF8F3D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2GrowableStack.h */ = {isa = PBXBuildFile; fileRef = 02CA5EEABB994CBAB4AA7CB4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2GrowableStack.h */; settings = {COMPILER_FLAGS = ""; }; };
+		4583A51B5BC343F79F7CB632 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.h */ = {isa = PBXBuildFile; fileRef = 9FAE7AD870B349D18FD1EDC2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.h */; settings = {COMPILER_FLAGS = ""; }; };
+		45AE43FAD23340F59FAB1201 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.h */ = {isa = PBXBuildFile; fileRef = 1154556B329E42509B26C974 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		4670AE960FC54603AED64CCC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.h */ = {isa = PBXBuildFile; fileRef = 15455F0C76684ABEB0683DC8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.h */; settings = {COMPILER_FLAGS = ""; }; };
+		4FE236DE67CC4E2CBA3DEDB2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideCircle.cpp */ = {isa = PBXBuildFile; fileRef = 814735F1B56F4DB89B555C96 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideCircle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		572A9553C74E4B7C9204236E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp */ = {isa = PBXBuildFile; fileRef = CA6A6D20923B4FCEB430999F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5BC438567E7F499A90C5360B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.cpp */ = {isa = PBXBuildFile; fileRef = 2A40B1E37E5B4BF6B44E1794 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5BCDB74D386543AAA5B00083 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp */ = {isa = PBXBuildFile; fileRef = 3365E14A8B204913846A03A8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5C4A0ECAB3EC4595846733AE /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp */ = {isa = PBXBuildFile; fileRef = 8711096972494C06B9B6140D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5CC28B50D17C4A81B29A4CF4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.cpp */ = {isa = PBXBuildFile; fileRef = A07DEE7C1A174941BCAA177A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5EF5057FD1A8479A84911FC2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.cpp */ = {isa = PBXBuildFile; fileRef = 8E8DE1BCE3AC4021A487B2BD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		658732923D7A44E392F354C3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h */ = {isa = PBXBuildFile; fileRef = FFFB8781E5A348F084821BDD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6F174877E39A43A08522162F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.cpp */ = {isa = PBXBuildFile; fileRef = B722208CF9DD4673972CD526 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		707BE4A1C8F34C53BCF99B7A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.h */ = {isa = PBXBuildFile; fileRef = 3B7BA1D11E754DAFADDC5BDB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		72187164DEC5470C9A6D0482 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h */ = {isa = PBXBuildFile; fileRef = C8ACA4273ECC493696224059 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		74CAE1791A004EFE950FE0C4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp */ = {isa = PBXBuildFile; fileRef = 1A397AD073C443C5B2A6DA76 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		759CA8F2A9E649CBA4F2399C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.cpp */ = {isa = PBXBuildFile; fileRef = 5E957DC2BE7040868AC4268D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		760077ECDE0F4AE29AB7DE91 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.cpp */ = {isa = PBXBuildFile; fileRef = 59E1A080A2C7423C887237F1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		79DD7A78205E450C8D5AED5C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.h */ = {isa = PBXBuildFile; fileRef = 3A6AD29AC3E04A37B1D2670A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		7A6712CF90FA47E692230860 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.h */ = {isa = PBXBuildFile; fileRef = 542A9BA7A94B46C09873FA37 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.h */; settings = {COMPILER_FLAGS = ""; }; };
+		7BEF6213D6274D12830FCF1F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.h */ = {isa = PBXBuildFile; fileRef = 96FC66B9D37F4A0E9B640CE4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.h */; settings = {COMPILER_FLAGS = ""; }; };
+		7C2C35443CD947E3BB86719F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.cpp */ = {isa = PBXBuildFile; fileRef = C91B3069ACA64FD2A80538CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7F622D67A3C2406E8A5EF369 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 39C6326C72F54B269B385508 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		7FAA93D111A24E149BF056A3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.cpp */ = {isa = PBXBuildFile; fileRef = 19BAE40FC3DB4883AB5C83C2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8512464F76874CC58584607D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.h */ = {isa = PBXBuildFile; fileRef = 40D934FCEB114E38AE2A5890 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		851C5E256C234B85B269955F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.cpp */ = {isa = PBXBuildFile; fileRef = F49DC11151DA407184546829 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8CAF43FE4AEF4E4780110256 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.h */ = {isa = PBXBuildFile; fileRef = B626A06F8F284EC4B5B112E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		8EDBD7BEF0444B748577CEF1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.cpp */ = {isa = PBXBuildFile; fileRef = 6F53C02B00CB43FCA06814DD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		924749DABF4641ACB22EF70E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.h */ = {isa = PBXBuildFile; fileRef = A9BE499B9C3546E68CFEEF2D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.h */; settings = {COMPILER_FLAGS = ""; }; };
+		927E78C901A94D54B04EFE68 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.cpp */ = {isa = PBXBuildFile; fileRef = 5D885C91CC124041B165AE3F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		940B762835C945D98F8A8323 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h */ = {isa = PBXBuildFile; fileRef = F4A9B52839A54DFAB6A4931D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		95238B3E0947454F9F96E5C8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.cpp */ = {isa = PBXBuildFile; fileRef = 820187081CDB4CFF8ED0E142 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9ACD64D8C472455D9CD468FB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.cpp */ = {isa = PBXBuildFile; fileRef = 8CDBF82AE20B4C6E8F6EA646 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9B408448EC35402AB51CCB91 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.h */ = {isa = PBXBuildFile; fileRef = C77866E930B24960B3579A8D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.h */; settings = {COMPILER_FLAGS = ""; }; };
+		A00F8BC4CD4E4E6685E93614 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.cpp */ = {isa = PBXBuildFile; fileRef = F624A511EF8E4C99B6BFCE06 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A04B315C206048A4B916A6D2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.cpp */ = {isa = PBXBuildFile; fileRef = 4CA5BA93F5A941678CBD46E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A08F02B4EB064CFCA0AE7C6C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.cpp */ = {isa = PBXBuildFile; fileRef = A8131C15891B4DB7B29AE201 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A12CC4E727F74800B1330DF8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp */ = {isa = PBXBuildFile; fileRef = 4C2F1CFB233847248FE433B2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A1C772B59D5E42C0A064AF0F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.cpp */ = {isa = PBXBuildFile; fileRef = 11010490EFC442A0A9771253 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A41E1A68723B4B8AAEB6281F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h */ = {isa = PBXBuildFile; fileRef = DD341CCA87824D9E9DAEFA9D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		A82B7D4689C44A04AF9AEFE6 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.h */ = {isa = PBXBuildFile; fileRef = A2073F48DF0448DD9815643A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		B2D6B04899A545568E47A503 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.h */ = {isa = PBXBuildFile; fileRef = 0D930DD947D24D4BBD45F8E3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		B4357B3C93DB4C3890AC0BC5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.h */ = {isa = PBXBuildFile; fileRef = 07F8ED08C321439D968E99DF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.h */; settings = {COMPILER_FLAGS = ""; }; };
+		B7A5918C965C471286DF9B40 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.h */ = {isa = PBXBuildFile; fileRef = 529DA9C0DF594849A750CA17 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.h */; settings = {COMPILER_FLAGS = ""; }; };
+		B9E5EF0009334884AE15EF85 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.cpp */ = {isa = PBXBuildFile; fileRef = 87169BD4C2944A20839D152E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BAEBC6A45D1E4FA0962016F2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.cpp */ = {isa = PBXBuildFile; fileRef = 4CBA5F4757AF4481902167BC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BCBD8D98D9EF4778BB5C58F3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.cpp */ = {isa = PBXBuildFile; fileRef = 8AF89FF08D66487BBA3F5BDB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C2057F5C9FF4482692ACB5CB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.h */ = {isa = PBXBuildFile; fileRef = A5D82E021F6D4B908640EF2E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.h */; settings = {COMPILER_FLAGS = ""; }; };
+		C45B3BBE750D47A8AF1E4D91 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.h */ = {isa = PBXBuildFile; fileRef = 995CAF99B08A4A678436AC7D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.h */; settings = {COMPILER_FLAGS = ""; }; };
+		C7A7527C716D4E74ACA97FC4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.h */ = {isa = PBXBuildFile; fileRef = 82AA2CDFCBCD4C7693FB1E4A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.h */; settings = {COMPILER_FLAGS = ""; }; };
+		C92312B5557C433BA07454FB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.cpp */ = {isa = PBXBuildFile; fileRef = 1ED474F6B8C54068A65321F4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CA3E1B2550904FA5B6D77C0A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.cpp */ = {isa = PBXBuildFile; fileRef = CC4AC1D5816F40F5B5E39E52 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CB3B3FF72A364279AE7591A3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.h */ = {isa = PBXBuildFile; fileRef = 8C27462626CC42C79D3B9EE6 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		CB8CB0765FBA471BB05B84D4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.cpp */ = {isa = PBXBuildFile; fileRef = 47A9640147CB48E4A846F50D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CC9A54511993470C9A64C9FF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp */ = {isa = PBXBuildFile; fileRef = 57B09D55DAAE41C2A267A7D4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D41B5BEC86CF44089D88FB85 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.h */ = {isa = PBXBuildFile; fileRef = 53155A51E4154786AEA2FAA0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.h */; settings = {COMPILER_FLAGS = ""; }; };
+		D8157D6221D3488481872C28 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp */ = {isa = PBXBuildFile; fileRef = 98AC0FE0B5CA4C22980A035D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DC09861F05274236BA94F6E3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.cpp */ = {isa = PBXBuildFile; fileRef = D875BD19D4AC4B1BA80FB9CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DC1CD6155E684D33B51FAFBA /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.h */ = {isa = PBXBuildFile; fileRef = 362056841F6F43E889CB4A88 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.h */; settings = {COMPILER_FLAGS = ""; }; };
+		DD56FCB0D9304651BD65743A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.cpp */ = {isa = PBXBuildFile; fileRef = CA80B7C3CF8E4577A290C974 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E54147B9893D4CF897DC0E14 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.cpp */ = {isa = PBXBuildFile; fileRef = 23313976D7704ECBBEE198BE /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E5C38EEAB45D457C8D93762F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.cpp */ = {isa = PBXBuildFile; fileRef = E19370F9BC644D7DA37DCAD2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E608AAB8992B4987B8F38896 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollidePolygon.cpp */ = {isa = PBXBuildFile; fileRef = 095D161662254289B9D855E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollidePolygon.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E8EC427C1D7D44CF85CF28CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.cpp */ = {isa = PBXBuildFile; fileRef = 6CDF6EA7B86E4FB4BEE6D4A0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F109258B5F0C42B0988445F3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.h */ = {isa = PBXBuildFile; fileRef = 1418B634980846EA8B0204F5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.h */; settings = {COMPILER_FLAGS = ""; }; };
+		F2FF10BFD1D24621A003D3B3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.cpp */ = {isa = PBXBuildFile; fileRef = 92F8A9304129460599067299 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F46F33FEE16E4F92BFF81793 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.h */ = {isa = PBXBuildFile; fileRef = CF5C248F339A482E9A8E4342 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.h */; settings = {COMPILER_FLAGS = ""; }; };
+		F5F0FBC2E07449209E1BD193 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2TimeStep.h */ = {isa = PBXBuildFile; fileRef = CB32E1117B5A4CDAA6520E95 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2TimeStep.h */; settings = {COMPILER_FLAGS = ""; }; };
+		F96CBF219CFF4AFDA6228EB6 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Box2D.h */ = {isa = PBXBuildFile; fileRef = 15FD27258DB0486EA9989CE5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Box2D.h */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2240C9D9B9984A81B198BB83 = {
+			isa = PBXBuildStyle;
+		};
+		2CE59B207DF24D238D6747C2 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		54DFC90CFBDC49539F37297C /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		8222D8D18156478EB16D2E53 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		9B5143304A8A404687609272 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		311ECCF08F924562B15A6827 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C284AA9C8F4DF29D3FD55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B54CF52FD64431486DE4871;
+			remoteInfo = ZERO_CHECK;
+		};
+		E8F8138FDFF041E2B19E8443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C284AA9C8F4DF29D3FD55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA23A55E33C44B769B7C7B26;
+			remoteInfo = ALL_BUILD;
+		};
+		F8CB307634D546C0A7C52DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C284AA9C8F4DF29D3FD55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A7E643CA3C4671A4034ED1;
+			remoteInfo = Box2D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CA5EEABB994CBAB4AA7CB4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2GrowableStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2GrowableStack.h; path = Box2D/Common/b2GrowableStack.h; sourceTree = SOURCE_ROOT; };
+		07F8ED08C321439D968E99DF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Island.h; path = Box2D/Dynamics/b2Island.h; sourceTree = SOURCE_ROOT; };
+		095D161662254289B9D855E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollidePolygon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CollidePolygon.cpp; path = Box2D/Collision/b2CollidePolygon.cpp; sourceTree = SOURCE_ROOT; };
+		09CEE8ABAB9E468DBC2A9033 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Distance.cpp; path = Box2D/Collision/b2Distance.cpp; sourceTree = SOURCE_ROOT; };
+		0D453CEE88CE47E4B020CC4A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2EdgeShape.h; path = Box2D/Collision/Shapes/b2EdgeShape.h; sourceTree = SOURCE_ROOT; };
+		0D930DD947D24D4BBD45F8E3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2TimeOfImpact.h; path = Box2D/Collision/b2TimeOfImpact.h; sourceTree = SOURCE_ROOT; };
+		11010490EFC442A0A9771253 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2DynamicTree.cpp; path = Box2D/Collision/b2DynamicTree.cpp; sourceTree = SOURCE_ROOT; };
+		1154556B329E42509B26C974 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2WheelJoint.h; path = Box2D/Dynamics/Joints/b2WheelJoint.h; sourceTree = SOURCE_ROOT; };
+		1418B634980846EA8B0204F5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2BroadPhase.h; path = Box2D/Collision/b2BroadPhase.h; sourceTree = SOURCE_ROOT; };
+		15455F0C76684ABEB0683DC8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Distance.h; path = Box2D/Collision/b2Distance.h; sourceTree = SOURCE_ROOT; };
+		15FD27258DB0486EA9989CE5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Box2D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Box2D.h; path = Box2D/Box2D.h; sourceTree = SOURCE_ROOT; };
+		19BAE40FC3DB4883AB5C83C2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Joint.cpp; path = Box2D/Dynamics/Joints/b2Joint.cpp; sourceTree = SOURCE_ROOT; };
+		1A397AD073C443C5B2A6DA76 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2EdgeAndCircleContact.cpp; path = Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		1ED474F6B8C54068A65321F4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Contact.cpp; path = Box2D/Dynamics/Contacts/b2Contact.cpp; sourceTree = SOURCE_ROOT; };
+		23313976D7704ECBBEE198BE /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2WorldCallbacks.cpp; path = Box2D/Dynamics/b2WorldCallbacks.cpp; sourceTree = SOURCE_ROOT; };
+		2A40B1E37E5B4BF6B44E1794 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Draw.cpp; path = Box2D/Common/b2Draw.cpp; sourceTree = SOURCE_ROOT; };
+		2A9336AA66874555B9A3E11F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Fixture.h; path = Box2D/Dynamics/b2Fixture.h; sourceTree = SOURCE_ROOT; };
+		2B947479F8B94A8D82F834EB /* Box2D */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		32992B2719E14D839619DCE1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Collision.cpp; path = Box2D/Collision/b2Collision.cpp; sourceTree = SOURCE_ROOT; };
+		3365E14A8B204913846A03A8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ChainAndCircleContact.cpp; path = Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		362056841F6F43E889CB4A88 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ContactManager.h; path = Box2D/Dynamics/b2ContactManager.h; sourceTree = SOURCE_ROOT; };
+		366E94A3DAD5417FBF7AAB9C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CircleShape.cpp; path = Box2D/Collision/Shapes/b2CircleShape.cpp; sourceTree = SOURCE_ROOT; };
+		39C6326C72F54B269B385508 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = Box2D/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3A6AD29AC3E04A37B1D2670A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2RopeJoint.h; path = Box2D/Dynamics/Joints/b2RopeJoint.h; sourceTree = SOURCE_ROOT; };
+		3B7BA1D11E754DAFADDC5BDB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2MotorJoint.h; path = Box2D/Dynamics/Joints/b2MotorJoint.h; sourceTree = SOURCE_ROOT; };
+		40D934FCEB114E38AE2A5890 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2DistanceJoint.h; path = Box2D/Dynamics/Joints/b2DistanceJoint.h; sourceTree = SOURCE_ROOT; };
+		47A9640147CB48E4A846F50D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2WeldJoint.cpp; path = Box2D/Dynamics/Joints/b2WeldJoint.cpp; sourceTree = SOURCE_ROOT; };
+		4C2F1CFB233847248FE433B2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2EdgeAndPolygonContact.cpp; path = Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp; sourceTree = SOURCE_ROOT; };
+		4CA5BA93F5A941678CBD46E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PolygonContact.cpp; path = Box2D/Dynamics/Contacts/b2PolygonContact.cpp; sourceTree = SOURCE_ROOT; };
+		4CBA5F4757AF4481902167BC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Fixture.cpp; path = Box2D/Dynamics/b2Fixture.cpp; sourceTree = SOURCE_ROOT; };
+		4D10C4A64EB04DB4BE442FE7 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2EdgeAndCircleContact.h; path = Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h; sourceTree = SOURCE_ROOT; };
+		529DA9C0DF594849A750CA17 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Draw.h; path = Box2D/Common/b2Draw.h; sourceTree = SOURCE_ROOT; };
+		53155A51E4154786AEA2FAA0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Joint.h; path = Box2D/Dynamics/Joints/b2Joint.h; sourceTree = SOURCE_ROOT; };
+		542A9BA7A94B46C09873FA37 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2DynamicTree.h; path = Box2D/Collision/b2DynamicTree.h; sourceTree = SOURCE_ROOT; };
+		56A4457EA72D4A58868654B1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2GearJoint.h; path = Box2D/Dynamics/Joints/b2GearJoint.h; sourceTree = SOURCE_ROOT; };
+		573D965DA15E45919BC06069 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2TimeOfImpact.cpp; path = Box2D/Collision/b2TimeOfImpact.cpp; sourceTree = SOURCE_ROOT; };
+		57B09D55DAAE41C2A267A7D4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ChainAndPolygonContact.cpp; path = Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp; sourceTree = SOURCE_ROOT; };
+		59E1A080A2C7423C887237F1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2GearJoint.cpp; path = Box2D/Dynamics/Joints/b2GearJoint.cpp; sourceTree = SOURCE_ROOT; };
+		5D885C91CC124041B165AE3F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2StackAllocator.cpp; path = Box2D/Common/b2StackAllocator.cpp; sourceTree = SOURCE_ROOT; };
+		5E957DC2BE7040868AC4268D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2BlockAllocator.cpp; path = Box2D/Common/b2BlockAllocator.cpp; sourceTree = SOURCE_ROOT; };
+		67232266603B4C35A6CEAD05 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Rope.h; path = Box2D/Rope/b2Rope.h; sourceTree = SOURCE_ROOT; };
+		6AAE7540B2AE4527AC6F0A73 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideEdge.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CollideEdge.cpp; path = Box2D/Collision/b2CollideEdge.cpp; sourceTree = SOURCE_ROOT; };
+		6AFACDF6BB4E4ABAB3AAC485 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2DistanceJoint.cpp; path = Box2D/Dynamics/Joints/b2DistanceJoint.cpp; sourceTree = SOURCE_ROOT; };
+		6CDF6EA7B86E4FB4BEE6D4A0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PulleyJoint.cpp; path = Box2D/Dynamics/Joints/b2PulleyJoint.cpp; sourceTree = SOURCE_ROOT; };
+		6F53C02B00CB43FCA06814DD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2MotorJoint.cpp; path = Box2D/Dynamics/Joints/b2MotorJoint.cpp; sourceTree = SOURCE_ROOT; };
+		786D2A1925F748EE9BFB248C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2Shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Shape.h; path = Box2D/Collision/Shapes/b2Shape.h; sourceTree = SOURCE_ROOT; };
+		814735F1B56F4DB89B555C96 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideCircle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CollideCircle.cpp; path = Box2D/Collision/b2CollideCircle.cpp; sourceTree = SOURCE_ROOT; };
+		820187081CDB4CFF8ED0E142 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2WheelJoint.cpp; path = Box2D/Dynamics/Joints/b2WheelJoint.cpp; sourceTree = SOURCE_ROOT; };
+		82AA2CDFCBCD4C7693FB1E4A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PolygonContact.h; path = Box2D/Dynamics/Contacts/b2PolygonContact.h; sourceTree = SOURCE_ROOT; };
+		8604F18AFF084DA2A7F0B43C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Contact.h; path = Box2D/Dynamics/Contacts/b2Contact.h; sourceTree = SOURCE_ROOT; };
+		8609043EC9974EAC9EADD1A5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2BroadPhase.cpp; path = Box2D/Collision/b2BroadPhase.cpp; sourceTree = SOURCE_ROOT; };
+		8711096972494C06B9B6140D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PrismaticJoint.cpp; path = Box2D/Dynamics/Joints/b2PrismaticJoint.cpp; sourceTree = SOURCE_ROOT; };
+		87169BD4C2944A20839D152E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2EdgeShape.cpp; path = Box2D/Collision/Shapes/b2EdgeShape.cpp; sourceTree = SOURCE_ROOT; };
+		8AF89FF08D66487BBA3F5BDB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2MouseJoint.cpp; path = Box2D/Dynamics/Joints/b2MouseJoint.cpp; sourceTree = SOURCE_ROOT; };
+		8C27462626CC42C79D3B9EE6 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PrismaticJoint.h; path = Box2D/Dynamics/Joints/b2PrismaticJoint.h; sourceTree = SOURCE_ROOT; };
+		8CDBF82AE20B4C6E8F6EA646 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Island.cpp; path = Box2D/Dynamics/b2Island.cpp; sourceTree = SOURCE_ROOT; };
+		8E8DE1BCE3AC4021A487B2BD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Settings.cpp; path = Box2D/Common/b2Settings.cpp; sourceTree = SOURCE_ROOT; };
+		92F8A9304129460599067299 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Rope.cpp; path = Box2D/Rope/b2Rope.cpp; sourceTree = SOURCE_ROOT; };
+		96FC66B9D37F4A0E9B640CE4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2StackAllocator.h; path = Box2D/Common/b2StackAllocator.h; sourceTree = SOURCE_ROOT; };
+		98AC0FE0B5CA4C22980A035D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PolygonAndCircleContact.cpp; path = Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		995CAF99B08A4A678436AC7D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2CircleShape.h; path = Box2D/Collision/Shapes/b2CircleShape.h; sourceTree = SOURCE_ROOT; };
+		9FAE7AD870B349D18FD1EDC2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ChainShape.h; path = Box2D/Collision/Shapes/b2ChainShape.h; sourceTree = SOURCE_ROOT; };
+		A07DEE7C1A174941BCAA177A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Timer.cpp; path = Box2D/Common/b2Timer.cpp; sourceTree = SOURCE_ROOT; };
+		A2073F48DF0448DD9815643A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2FrictionJoint.h; path = Box2D/Dynamics/Joints/b2FrictionJoint.h; sourceTree = SOURCE_ROOT; };
+		A34B559DF18A423FA55C3E68 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A3C4F0B9867D452CAA42FB2C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Body.h; path = Box2D/Dynamics/b2Body.h; sourceTree = SOURCE_ROOT; };
+		A5D82E021F6D4B908640EF2E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Collision.h; path = Box2D/Collision/b2Collision.h; sourceTree = SOURCE_ROOT; };
+		A80C2775BC4440EAA4A146EF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Math.h; path = Box2D/Common/b2Math.h; sourceTree = SOURCE_ROOT; };
+		A8131C15891B4DB7B29AE201 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ContactSolver.cpp; path = Box2D/Dynamics/Contacts/b2ContactSolver.cpp; sourceTree = SOURCE_ROOT; };
+		A9BE499B9C3546E68CFEEF2D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Settings.h; path = Box2D/Common/b2Settings.h; sourceTree = SOURCE_ROOT; };
+		ADE91A6230B342278B7184A0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2BlockAllocator.h; path = Box2D/Common/b2BlockAllocator.h; sourceTree = SOURCE_ROOT; };
+		B2809F9487504F1889F6C932 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PulleyJoint.h; path = Box2D/Dynamics/Joints/b2PulleyJoint.h; sourceTree = SOURCE_ROOT; };
+		B553A115AEA4401984354FD9 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PolygonShape.h; path = Box2D/Collision/Shapes/b2PolygonShape.h; sourceTree = SOURCE_ROOT; };
+		B626A06F8F284EC4B5B112E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2RevoluteJoint.h; path = Box2D/Dynamics/Joints/b2RevoluteJoint.h; sourceTree = SOURCE_ROOT; };
+		B722208CF9DD4673972CD526 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PolygonShape.cpp; path = Box2D/Collision/Shapes/b2PolygonShape.cpp; sourceTree = SOURCE_ROOT; };
+		B8A30DB9DDA249F2A3E70DAC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ContactSolver.h; path = Box2D/Dynamics/Contacts/b2ContactSolver.h; sourceTree = SOURCE_ROOT; };
+		C0C4649C73EE4DBDB5D0E674 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2WeldJoint.h; path = Box2D/Dynamics/Joints/b2WeldJoint.h; sourceTree = SOURCE_ROOT; };
+		C77866E930B24960B3579A8D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2WorldCallbacks.h; path = Box2D/Dynamics/b2WorldCallbacks.h; sourceTree = SOURCE_ROOT; };
+		C8ACA4273ECC493696224059 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PolygonAndCircleContact.h; path = Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h; sourceTree = SOURCE_ROOT; };
+		C91B3069ACA64FD2A80538CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2FrictionJoint.cpp; path = Box2D/Dynamics/Joints/b2FrictionJoint.cpp; sourceTree = SOURCE_ROOT; };
+		CA6A6D20923B4FCEB430999F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2RevoluteJoint.cpp; path = Box2D/Dynamics/Joints/b2RevoluteJoint.cpp; sourceTree = SOURCE_ROOT; };
+		CA80B7C3CF8E4577A290C974 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ChainShape.cpp; path = Box2D/Collision/Shapes/b2ChainShape.cpp; sourceTree = SOURCE_ROOT; };
+		CB32E1117B5A4CDAA6520E95 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2TimeStep.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2TimeStep.h; path = Box2D/Dynamics/b2TimeStep.h; sourceTree = SOURCE_ROOT; };
+		CC4AC1D5816F40F5B5E39E52 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2World.cpp; path = Box2D/Dynamics/b2World.cpp; sourceTree = SOURCE_ROOT; };
+		CF5C248F339A482E9A8E4342 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Timer.h; path = Box2D/Common/b2Timer.h; sourceTree = SOURCE_ROOT; };
+		D875BD19D4AC4B1BA80FB9CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ContactManager.cpp; path = Box2D/Dynamics/b2ContactManager.cpp; sourceTree = SOURCE_ROOT; };
+		DD341CCA87824D9E9DAEFA9D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ChainAndPolygonContact.h; path = Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h; sourceTree = SOURCE_ROOT; };
+		E19370F9BC644D7DA37DCAD2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Body.cpp; path = Box2D/Dynamics/b2Body.cpp; sourceTree = SOURCE_ROOT; };
+		E8FBB277E8454F57A14C8D1C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2World.h; path = Box2D/Dynamics/b2World.h; sourceTree = SOURCE_ROOT; };
+		EE84346CE27747FE91F2F74E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2CircleContact.h; path = Box2D/Dynamics/Contacts/b2CircleContact.h; sourceTree = SOURCE_ROOT; };
+		F2A077CF97FD4CDCB2C3553B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CircleContact.cpp; path = Box2D/Dynamics/Contacts/b2CircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		F32D976F03EA4E7DB015190D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2MouseJoint.h; path = Box2D/Dynamics/Joints/b2MouseJoint.h; sourceTree = SOURCE_ROOT; };
+		F49DC11151DA407184546829 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Math.cpp; path = Box2D/Common/b2Math.cpp; sourceTree = SOURCE_ROOT; };
+		F4A9B52839A54DFAB6A4931D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ChainAndCircleContact.h; path = Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h; sourceTree = SOURCE_ROOT; };
+		F624A511EF8E4C99B6BFCE06 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2RopeJoint.cpp; path = Box2D/Dynamics/Joints/b2RopeJoint.cpp; sourceTree = SOURCE_ROOT; };
+		F9BD89CEAB27488A895A927A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FFFB8781E5A348F084821BDD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2EdgeAndPolygonContact.h; path = Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		10C8062001174ED9B3DA8259 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9D0C0F1C469F4D47892426E3 /* ALL_BUILD */,
+				2889635773D94E30B97818A3 /* ZERO_CHECK */,
+				F94BFF37F47D4FE6982ABC32 /* Box2D */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		125BACDD467547B9A126E133 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				CA80B7C3CF8E4577A290C974 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.cpp */,
+				9FAE7AD870B349D18FD1EDC2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.h */,
+				366E94A3DAD5417FBF7AAB9C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.cpp */,
+				995CAF99B08A4A678436AC7D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.h */,
+				87169BD4C2944A20839D152E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.cpp */,
+				0D453CEE88CE47E4B020CC4A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.h */,
+				B722208CF9DD4673972CD526 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.cpp */,
+				B553A115AEA4401984354FD9 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.h */,
+				786D2A1925F748EE9BFB248C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2Shape.h */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		14A46FD4E61E4C7FA4DAA207 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5E957DC2BE7040868AC4268D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.cpp */,
+				ADE91A6230B342278B7184A0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.h */,
+				2A40B1E37E5B4BF6B44E1794 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.cpp */,
+				529DA9C0DF594849A750CA17 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.h */,
+				02CA5EEABB994CBAB4AA7CB4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2GrowableStack.h */,
+				F49DC11151DA407184546829 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.cpp */,
+				A80C2775BC4440EAA4A146EF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.h */,
+				8E8DE1BCE3AC4021A487B2BD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.cpp */,
+				A9BE499B9C3546E68CFEEF2D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.h */,
+				5D885C91CC124041B165AE3F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.cpp */,
+				96FC66B9D37F4A0E9B640CE4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.h */,
+				A07DEE7C1A174941BCAA177A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.cpp */,
+				CF5C248F339A482E9A8E4342 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		22A63699C2AA4B3FB9143BB4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2889635773D94E30B97818A3 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				8DEDCC5CF1924CCE9B57E422 /* CMake Rules */,
+				A34B559DF18A423FA55C3E68 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		31A43E9C18244828898D437F /* Joints */ = {
+			isa = PBXGroup;
+			children = (
+				6AFACDF6BB4E4ABAB3AAC485 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.cpp */,
+				40D934FCEB114E38AE2A5890 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.h */,
+				C91B3069ACA64FD2A80538CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.cpp */,
+				A2073F48DF0448DD9815643A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.h */,
+				59E1A080A2C7423C887237F1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.cpp */,
+				56A4457EA72D4A58868654B1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.h */,
+				19BAE40FC3DB4883AB5C83C2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.cpp */,
+				53155A51E4154786AEA2FAA0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.h */,
+				6F53C02B00CB43FCA06814DD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.cpp */,
+				3B7BA1D11E754DAFADDC5BDB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.h */,
+				8AF89FF08D66487BBA3F5BDB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.cpp */,
+				F32D976F03EA4E7DB015190D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.h */,
+				8711096972494C06B9B6140D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp */,
+				8C27462626CC42C79D3B9EE6 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.h */,
+				6CDF6EA7B86E4FB4BEE6D4A0 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.cpp */,
+				B2809F9487504F1889F6C932 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.h */,
+				CA6A6D20923B4FCEB430999F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp */,
+				B626A06F8F284EC4B5B112E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.h */,
+				F624A511EF8E4C99B6BFCE06 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.cpp */,
+				3A6AD29AC3E04A37B1D2670A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.h */,
+				47A9640147CB48E4A846F50D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.cpp */,
+				C0C4649C73EE4DBDB5D0E674 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.h */,
+				820187081CDB4CFF8ED0E142 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.cpp */,
+				1154556B329E42509B26C974 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.h */,
+			);
+			name = Joints;
+			sourceTree = "<group>";
+		};
+		3F5368AB9D334AB5B96291E7 = {
+			isa = PBXGroup;
+			children = (
+				10C8062001174ED9B3DA8259 /* Sources */,
+				4931F3859E464FED875C7759 /* Resources */,
+				B5EF6112234848118F05FABD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4931F3859E464FED875C7759 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		71CDEDC152744F5282FE4D63 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				15FD27258DB0486EA9989CE5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Box2D.h */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		8DEDCC5CF1924CCE9B57E422 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		909A939306384994B6BB91CF /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				3365E14A8B204913846A03A8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp */,
+				F4A9B52839A54DFAB6A4931D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h */,
+				57B09D55DAAE41C2A267A7D4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp */,
+				DD341CCA87824D9E9DAEFA9D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h */,
+				F2A077CF97FD4CDCB2C3553B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.cpp */,
+				EE84346CE27747FE91F2F74E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.h */,
+				1ED474F6B8C54068A65321F4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.cpp */,
+				8604F18AFF084DA2A7F0B43C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.h */,
+				A8131C15891B4DB7B29AE201 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.cpp */,
+				B8A30DB9DDA249F2A3E70DAC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.h */,
+				1A397AD073C443C5B2A6DA76 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp */,
+				4D10C4A64EB04DB4BE442FE7 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h */,
+				4C2F1CFB233847248FE433B2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp */,
+				FFFB8781E5A348F084821BDD /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h */,
+				98AC0FE0B5CA4C22980A035D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp */,
+				C8ACA4273ECC493696224059 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h */,
+				4CA5BA93F5A941678CBD46E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.cpp */,
+				82AA2CDFCBCD4C7693FB1E4A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.h */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
+		9D0C0F1C469F4D47892426E3 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				22A63699C2AA4B3FB9143BB4 /* CMake Rules */,
+				F9BD89CEAB27488A895A927A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B5EF6112234848118F05FABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B947479F8B94A8D82F834EB /* Box2D */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6F19D05DEE345E492E7E282 /* Dynamics */ = {
+			isa = PBXGroup;
+			children = (
+				31A43E9C18244828898D437F /* Joints */,
+				909A939306384994B6BB91CF /* Contacts */,
+				E19370F9BC644D7DA37DCAD2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.cpp */,
+				A3C4F0B9867D452CAA42FB2C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.h */,
+				D875BD19D4AC4B1BA80FB9CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.cpp */,
+				362056841F6F43E889CB4A88 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.h */,
+				4CBA5F4757AF4481902167BC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.cpp */,
+				2A9336AA66874555B9A3E11F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.h */,
+				8CDBF82AE20B4C6E8F6EA646 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.cpp */,
+				07F8ED08C321439D968E99DF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.h */,
+				CB32E1117B5A4CDAA6520E95 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2TimeStep.h */,
+				CC4AC1D5816F40F5B5E39E52 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.cpp */,
+				E8FBB277E8454F57A14C8D1C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.h */,
+				23313976D7704ECBBEE198BE /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.cpp */,
+				C77866E930B24960B3579A8D /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.h */,
+			);
+			name = Dynamics;
+			sourceTree = "<group>";
+		};
+		CBE5607333A346F3960D24F1 /* Rope */ = {
+			isa = PBXGroup;
+			children = (
+				92F8A9304129460599067299 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.cpp */,
+				67232266603B4C35A6CEAD05 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.h */,
+			);
+			name = Rope;
+			sourceTree = "<group>";
+		};
+		E86C772080CF49468268CA2F /* Collision */ = {
+			isa = PBXGroup;
+			children = (
+				125BACDD467547B9A126E133 /* Shapes */,
+				8609043EC9974EAC9EADD1A5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.cpp */,
+				1418B634980846EA8B0204F5 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.h */,
+				814735F1B56F4DB89B555C96 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideCircle.cpp */,
+				6AAE7540B2AE4527AC6F0A73 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideEdge.cpp */,
+				095D161662254289B9D855E8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollidePolygon.cpp */,
+				32992B2719E14D839619DCE1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.cpp */,
+				A5D82E021F6D4B908640EF2E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.h */,
+				09CEE8ABAB9E468DBC2A9033 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.cpp */,
+				15455F0C76684ABEB0683DC8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.h */,
+				11010490EFC442A0A9771253 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.cpp */,
+				542A9BA7A94B46C09873FA37 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.h */,
+				573D965DA15E45919BC06069 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.cpp */,
+				0D930DD947D24D4BBD45F8E3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.h */,
+			);
+			name = Collision;
+			sourceTree = "<group>";
+		};
+		F94BFF37F47D4FE6982ABC32 /* Box2D */ = {
+			isa = PBXGroup;
+			children = (
+				71CDEDC152744F5282FE4D63 /* Include */,
+				C6F19D05DEE345E492E7E282 /* Dynamics */,
+				14A46FD4E61E4C7FA4DAA207 /* Common */,
+				E86C772080CF49468268CA2F /* Collision */,
+				CBE5607333A346F3960D24F1 /* Rope */,
+				39C6326C72F54B269B385508 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/CMakeLists.txt */,
+			);
+			name = Box2D;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27A7E643CA3C4671A4034ED1 /* Box2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26723E8FCE114ED48A8EB8DF /* Build configuration list for PBXNativeTarget "Box2D" */;
+			buildPhases = (
+				F50F1339BF914436BF2A72F4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Box2D;
+			productName = Box2D;
+			productReference = 2B947479F8B94A8D82F834EB /* Box2D */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32C284AA9C8F4DF29D3FD55D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = 477B7F475F774A769A99D8A3 /* Build configuration list for PBXProject "Box2D" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				9B5143304A8A404687609272 /* Debug */,
+				8222D8D18156478EB16D2E53 /* Release */,
+				2CE59B207DF24D238D6747C2 /* MinSizeRel */,
+				54DFC90CFBDC49539F37297C /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 3F5368AB9D334AB5B96291E7;
+			projectDirPath = ../../../../libs/box2d;
+			projectRoot = "";
+			targets = (
+				CA23A55E33C44B769B7C7B26 /* ALL_BUILD */,
+				4FC599E87E954B82B41CCFCB /* RUN_TESTS */,
+				5B54CF52FD64431486DE4871 /* ZERO_CHECK */,
+				0968D581CE2E44DCB0377177 /* install */,
+				27A7E643CA3C4671A4034ED1 /* Box2D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E9366A7D6004B0DBEDD286A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		65C6C8E8C59044AA87712ED0 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d -f /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		84AC1FBD777142F9A653854A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d -f /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8665D6CCDD474A78B8E22266 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		91863C4F98254D6CBE6E3174 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		BDBA6709A1D2440BBBE7B0C5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d -f /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C4C6EE64EACA4B4680AA8C28 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		EAB02A3FA1674F7599F2A058 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d -f /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50F1339BF914436BF2A72F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD56FCB0D9304651BD65743A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2ChainShape.cpp */,
+				1DB2441E348C4DF9A04CFE76 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2CircleShape.cpp */,
+				B9E5EF0009334884AE15EF85 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2EdgeShape.cpp */,
+				6F174877E39A43A08522162F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/Shapes/b2PolygonShape.cpp */,
+				14FD9E07F1D24BDCAABFE47A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2BroadPhase.cpp */,
+				4FE236DE67CC4E2CBA3DEDB2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideCircle.cpp */,
+				314FBAE3C96E48B4BD9D713B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollideEdge.cpp */,
+				E608AAB8992B4987B8F38896 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2CollidePolygon.cpp */,
+				3FB876CB9D3A465CA41C839C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Collision.cpp */,
+				19B290981DDF4E9A88AE67C1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2Distance.cpp */,
+				A1C772B59D5E42C0A064AF0F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2DynamicTree.cpp */,
+				1D302206E55C445F8D3CD825 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Collision/b2TimeOfImpact.cpp */,
+				759CA8F2A9E649CBA4F2399C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2BlockAllocator.cpp */,
+				5BC438567E7F499A90C5360B /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Draw.cpp */,
+				851C5E256C234B85B269955F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Math.cpp */,
+				5EF5057FD1A8479A84911FC2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Settings.cpp */,
+				927E78C901A94D54B04EFE68 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2StackAllocator.cpp */,
+				5CC28B50D17C4A81B29A4CF4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Common/b2Timer.cpp */,
+				5BCDB74D386543AAA5B00083 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp */,
+				CC9A54511993470C9A64C9FF /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp */,
+				1B48F5A60A1248A4B16B17C9 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2CircleContact.cpp */,
+				C92312B5557C433BA07454FB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2Contact.cpp */,
+				A08F02B4EB064CFCA0AE7C6C /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2ContactSolver.cpp */,
+				74CAE1791A004EFE950FE0C4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp */,
+				A12CC4E727F74800B1330DF8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp */,
+				D8157D6221D3488481872C28 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp */,
+				A04B315C206048A4B916A6D2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Contacts/b2PolygonContact.cpp */,
+				344ACCC9094E4990B71609F4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2DistanceJoint.cpp */,
+				7C2C35443CD947E3BB86719F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2FrictionJoint.cpp */,
+				760077ECDE0F4AE29AB7DE91 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2GearJoint.cpp */,
+				7FAA93D111A24E149BF056A3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2Joint.cpp */,
+				8EDBD7BEF0444B748577CEF1 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MotorJoint.cpp */,
+				BCBD8D98D9EF4778BB5C58F3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2MouseJoint.cpp */,
+				5C4A0ECAB3EC4595846733AE /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp */,
+				E8EC427C1D7D44CF85CF28CC /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2PulleyJoint.cpp */,
+				572A9553C74E4B7C9204236E /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp */,
+				A00F8BC4CD4E4E6685E93614 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2RopeJoint.cpp */,
+				CB8CB0765FBA471BB05B84D4 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WeldJoint.cpp */,
+				95238B3E0947454F9F96E5C8 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/Joints/b2WheelJoint.cpp */,
+				E5C38EEAB45D457C8D93762F /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Body.cpp */,
+				DC09861F05274236BA94F6E3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2ContactManager.cpp */,
+				BAEBC6A45D1E4FA0962016F2 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Fixture.cpp */,
+				9ACD64D8C472455D9CD468FB /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2Island.cpp */,
+				CA3E1B2550904FA5B6D77C0A /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2World.cpp */,
+				E54147B9893D4CF897DC0E14 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Dynamics/b2WorldCallbacks.cpp */,
+				F2FF10BFD1D24621A003D3B3 /* /Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/Rope/b2Rope.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4446DA220FFA4B4FA12104DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA23A55E33C44B769B7C7B26 /* ALL_BUILD */;
+			targetProxy = E8F8138FDFF041E2B19E8443 /* PBXContainerItemProxy */;
+		};
+		7408B17E3072428991D81A35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27A7E643CA3C4671A4034ED1 /* Box2D */;
+			targetProxy = F8CB307634D546C0A7C52DFF /* PBXContainerItemProxy */;
+		};
+		DA4B701D4FB9438F8B5C9BCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B54CF52FD64431486DE4871 /* ZERO_CHECK */;
+			targetProxy = 311ECCF08F924562B15A6827 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1491AF354B804825B85E2475 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		19738BBD231445F7B39C4B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1EF1F01CE8264BF6AFABFCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		2EF0C8A36AB94FBA8A8F5FF0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2FFE129158E1477F92036256 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3D18DB96A1F14E10898E35C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3EBBDFB70BDE4AFA89320FC5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d,/Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/..);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-Wno-error=unused-command-line-argument -Qunused-arguments -fcolor-diagnostics        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4F06FB544DA44CA7929F1183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		66A71B96E4CB4ABDA55434B8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6A33D797A88E43909A2EA65C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/build;
+			};
+			name = MinSizeRel;
+		};
+		6E9B56A8954341ECB5B0637C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8623572CB9834C3F810F5955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8EB9C8DF1E8C4F0F8AB2D9F3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9B3FCE2A7AE240B3BBEBDAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d,/Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/..);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-Wno-error=unused-command-line-argument -Qunused-arguments -fcolor-diagnostics     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		ADFCA8C8A9124BD6B4FE9727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		AF7CA485F1CD4A468801CF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B78D8D0709254E7DA3B4B128 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DD5BE777E50B4DAB9165E36B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/build;
+			};
+			name = RelWithDebInfo;
+		};
+		E40F4DC4C0E24CFCA15CD95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/build;
+			};
+			name = Debug;
+		};
+		E6E3EC3463B04F14BF145E90 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d,/Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/..);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-Wno-error=unused-command-line-argument -Qunused-arguments -fcolor-diagnostics     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EED4DB9DE819461F977B0CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d,/Users/pavelershov/Job/Physics_Practice/libs/box2d/Box2D/..);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-Wno-error=unused-command-line-argument -Qunused-arguments -fcolor-diagnostics     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F8F8AE687E334EFA9908D7AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d/build;
+			};
+			name = Release;
+		};
+		F9CCB1CB4601482185489FF4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FCAE8B1B6D69436F80D46352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/pavelershov/Job/Physics_Practice/libs/glm/glm,/Users/pavelershov/Job/Physics_Practice/libs/glfw/include,/Users/pavelershov/Job/Physics_Practice/libs/glfw/deps,/Users/pavelershov/Job/Physics_Practice/libs/chipmunk/include,/Users/pavelershov/Job/Physics_Practice/libs/box2d);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavelershov/Job/Physics_Practice/build/OSX/libs/box2d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E39FA566A2A4829943B72F6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D18DB96A1F14E10898E35C8 /* Debug */,
+				FCAE8B1B6D69436F80D46352 /* Release */,
+				6E9B56A8954341ECB5B0637C /* MinSizeRel */,
+				2FFE129158E1477F92036256 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		26723E8FCE114ED48A8EB8DF /* Build configuration list for PBXNativeTarget "Box2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3FCE2A7AE240B3BBEBDAB0 /* Debug */,
+				EED4DB9DE819461F977B0CEF /* Release */,
+				E6E3EC3463B04F14BF145E90 /* MinSizeRel */,
+				3EBBDFB70BDE4AFA89320FC5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		477B7F475F774A769A99D8A3 /* Build configuration list for PBXProject "Box2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40F4DC4C0E24CFCA15CD95B /* Debug */,
+				F8F8AE687E334EFA9908D7AB /* Release */,
+				6A33D797A88E43909A2EA65C /* MinSizeRel */,
+				DD5BE777E50B4DAB9165E36B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6303552A6EE54FF38C8DD6DD /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8623572CB9834C3F810F5955 /* Debug */,
+				19738BBD231445F7B39C4B7B /* Release */,
+				66A71B96E4CB4ABDA55434B8 /* MinSizeRel */,
+				1491AF354B804825B85E2475 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C6C8D550178147DF8FBC94EF /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF1F01CE8264BF6AFABFCAF /* Debug */,
+				4F06FB544DA44CA7929F1183 /* Release */,
+				B78D8D0709254E7DA3B4B128 /* MinSizeRel */,
+				8EB9C8DF1E8C4F0F8AB2D9F3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9182796881B4714AFDF4CC5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFCA8C8A9124BD6B4FE9727 /* Debug */,
+				AF7CA485F1CD4A468801CF74 /* Release */,
+				2EF0C8A36AB94FBA8A8F5FF0 /* MinSizeRel */,
+				F9CCB1CB4601482185489FF4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32C284AA9C8F4DF29D3FD55D /* Project object */;
+}
